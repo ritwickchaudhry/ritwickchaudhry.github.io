@@ -23,7 +23,15 @@
 
     <link rel="canonical" href="https://ritwickchaudhry.github.io/">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SWSCXLQQBY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-SWSCXLQQBY');
+    </script>
 
     <title>Ritwick Chaudhry</title>
 
@@ -327,7 +335,7 @@
                                         AAAI 2021
                                     </div>
                                     <p>
-                                        <a type="button " class="btn btn-primary btn-outline btn-xs " data-toggle="modal " data-target="#sg_modal ">Abstract</a>
+                                        <a type="button" class="btn btn-primary btn-outline btn-xs " data-toggle="modal " data-target="#sg_modal ">Abstract</a>
                                         <a class="btn btn-primary btn-outline btn-xs " href="https://www.aaai.org/AAAI21Papers/AAAI-3211.MaheshwariP.pdf "> PDF</a>
                                         <a class="btn btn-primary btn-outline btn-xs " href="https://slideslive.com/38948276/scene-graph-embeddings-using-relative-similarity-supervision ">Talk</a>
                                         <a class="btn btn-primary btn-outline btn-xs " onclick="sg() ">BibTeX</a>
@@ -355,7 +363,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <pre id="sg_bib " , style="display:none ">
+                                        <pre id="sg_bib" , style="display:none ">
 @inproceedings{maheshwari2021scene,
   title={Scene Graph Embeddings Using Relative Similarity Supervision},
   author={Maheshwari, Paridhi and Chaudhry, Ritwick and Vinay, Vishwa},
@@ -1151,46 +1159,6 @@ year = {2020}
     <script src="js/shuffle.js "></script>
     <script src="js/bibtex.js "></script>
     <script src="https://unpkg.com/shuffle-letters "></script>
-
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a,
-                m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'G-SWSCXLQQBY', 'auto');
-        ga('send', 'pageview');
-        var links = document.querySelectorAll('a');
-        Array.prototype.map.call(links, function(item) {
-            if (item.host != document.location.host) {
-                item.addEventListener('click', function() {
-                    var action = item.getAttribute('data-action') || 'follow';
-                    ga('send', 'event', 'outbound', action, item.href);
-                });
-            }
-        });
-    </script>
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js "></script>
-    <script>
-        hljs.initHighlightingOnLoad();
-    </script>
-
-
-
-    <script type="text/x-mathjax-config ">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-    </script>
-    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML "></script>
-
 
 </body>
 
